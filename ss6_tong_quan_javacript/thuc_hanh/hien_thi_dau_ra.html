@@ -5,9 +5,13 @@
     <title>Xin chào</title>
 </head>
 <body>
+<p id="messageDiv"></p>
 <button type="button" onclick="showMessage();">Click Me!</button>
     <script>
         function showMessage() {
+            alert("xin chao");
+            document.getElementById("messageDiv").innerHTML = "xin chao viet nam";
+            document.write('xin chao viet nam');
             console.log("xin chao");
         }
     </script>
