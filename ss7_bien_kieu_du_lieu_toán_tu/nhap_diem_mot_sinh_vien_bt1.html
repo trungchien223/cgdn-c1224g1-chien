@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> điểm trung bình của một sinh viên</title>
+</head>
+<body>
+<h1>Nhập Điểm Trung Bình Của Sinh Viên</h1>
+<span>Toán</span>
+<input type="number" id="toan"><br><br>
+<span>Lý</span>
+<input type="number" id="ly"><br><br>
+<span>Hóa</span>
+<input type="number" id="hoa"><br><br>
+<button type="button" onclick="tinhDiem()">Nhập</button>
+<p id="tong">Tổng Điểm :</p>
+<script>
+    function tinhDiem(){
+        let toan= +document.getElementById("toan").value;
+        let ly= +document.getElementById("ly").value;
+        let hoa= +document.getElementById("hoa").value;
+        let diemTong=(toan + ly + hoa)/3;
+        document.getElementById("tong").innerText =diemTong;
+
+    }
+</script>
+</body>
+</html>

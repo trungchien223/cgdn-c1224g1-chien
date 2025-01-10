@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính diện tích hình tròn</title>
+</head>
+<body>
+<input type="number" id="banKinh">
+<p id="dienTich">kết quả</p>
+<button onclick="tinhDienTich()">Nhap</button>
+<script>
+ function tinhDienTich() {
+     let bankinh = document.getElementById("banKinh").value;
+     const dientich = Math.PI * bankinh * bankinh
+     document.getElementById("dienTich").innerText = dienTich;
+ }
+</script>
+</body>
+</html>
